@@ -1,0 +1,9 @@
+__pycache__/
+*.pyc
+breach_images/
+*.jpg
+*.jpeg
+*.png
+*.pem
+.env
+venv/
