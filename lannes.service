@@ -1,0 +1,15 @@
+[Unit]
+Description=Lannes System - breach, telemetry, health, WebRTC
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=lannes-system
+WorkingDirectory=/home/lannes-system
+ExecStart=/usr/bin/python3 /home/lannes-system/lannes_system_w_webrtc.py
+Restart=always
+RestartSec=5
+
+[Install]
+WantedBy=multi-user.target
