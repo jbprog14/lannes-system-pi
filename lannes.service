@@ -6,8 +6,9 @@ Wants=network-online.target
 [Service]
 Type=simple
 User=lannes-system
+Environment=PYTHONUNBUFFERED=1
 WorkingDirectory=/home/lannes-system
-ExecStart=/usr/bin/python3 /home/lannes-system/lannes_system_w_webrtc.py
+ExecStart=/usr/bin/python3 /home/lannes-system/lannes-repo/lannes_system_w_webrtc.py
 Restart=always
 RestartSec=5
 
